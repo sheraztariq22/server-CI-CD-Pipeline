@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  server:
+    image: sheraztariq22/server:${CI_COMMIT_SHORT_SHA}
+    volumes:
+      - servervol:/serverdata
+    ports:
+      - "5000:5000"
+volumes:
+  servervol:
