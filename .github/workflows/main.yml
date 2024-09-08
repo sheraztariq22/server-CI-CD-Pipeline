@@ -27,7 +27,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: your_dockerhub_username/server:${{ github.sha }}
+          tags: sheraztariq22/server:${{ github.sha }}
 
   deploy:
     runs-on: ubuntu-latest
